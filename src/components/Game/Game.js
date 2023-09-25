@@ -55,10 +55,10 @@ function Game() {
 
     if (guessInput === answer) setResult("winner");
 
-    if (guesses[NUM_OF_GUESSES_ALLOWED - 1].label && guessInput !== answer) {
+
+    if (nextGuesses[NUM_OF_GUESSES_ALLOWED - 1].label && guessInput !== answer) {
       setResult("loser");
     }
-
     setGuesses(nextGuesses);
     setGuessInput("");
   };

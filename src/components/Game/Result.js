@@ -3,7 +3,7 @@ import React from "react";
 export const Result = ({ isWinner, answer, numOfGuesses }) => {
   const className = isWinner ? "happy" : "sad";
   return (
-    <div class={className + " banner"}>
+    <div className={className + " banner"}>
       {isWinner ? (
         <p>
           <strong>Congratulations!</strong> Got it in
